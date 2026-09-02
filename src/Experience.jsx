@@ -59,7 +59,7 @@ export default function Experience() {
               >
                 {zoom}
               </p>
-            <iframe src="index.html" />
+            <iframe src="indexResume.html" />
           </Html>
         </primitive>
       </Float>
