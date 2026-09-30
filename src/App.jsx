@@ -20,8 +20,9 @@ function App() {
           position: [0, 1, 4],
         }}
       >
+        <axesHelper args={[10]} />
         <gridHelper args={[20, 20]} />
-        <color args={["#241a1a"]} attach="background" />
+        <color args={["#1a2324"]} attach="background" />
         <Environment preset="studio" />
         <ContactShadows position-y={-1.4} opacity={0.4} scale={5} blur={2.4} />
         <PresentationControls
