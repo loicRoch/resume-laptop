@@ -8,25 +8,14 @@
   border-radius: 20px;
   background: #000000;
 }
-.zoomContainer {
-  width: 10%;
-  height: 10px;
-  position: absolute;
-  top: -4%;
-  right: -2%;
-  border: solid;
-  border-style: dashed;
-  border-radius: 50%;
-  border-color: green;
-  display: flex;
-}
+
 .zoomId {
   right: 20px;
+  top: -20px;
   width: 1rem;
   height: 1rem;
   margin: 0;
   padding: 0;
-  top : -40px;
   font-weight: bold;
   font-size: 3rem;
   color: rgb(255, 72, 0);

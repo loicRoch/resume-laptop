@@ -1,12 +1,12 @@
 import { useGLTF, Float, Html } from "@react-three/drei";
-import { useState, useId } from "react";
+import { useState } from "react";
 import "./style.css";
 
 export default function Experience() {
   const computer = useGLTF(
     "https://threejs-journey.com/resources/models/macbook_model.gltf",
   );
-  const zoomId = useId();
+
   const [userView, setUserview] = useState({
     y: -1.4,
     z: 0,
@@ -26,7 +26,6 @@ export default function Experience() {
     }
   }
 
-
   return (
     <>
       <Float rotationIntensity={userView.rotationIntensity}>
@@ -38,6 +37,7 @@ export default function Experience() {
           rotation={[-0.1, Math.PI, 0]}
           position={[0, 0.55, -1.15]}
         />
+
         <primitive
           object={computer.scene}
           position-y={userView.y}
@@ -51,15 +51,10 @@ export default function Experience() {
             position={[0, 1.56, -1.4]}
             rotation-x={-0.256}
           >
-            {/* <iframe src="https://resume-for-fiber.vercel.app/" /> */}
-            {/* <iframe src="http://127.0.0.1:5501/" /> */}
-              <p
-                className="zoomId"
-                onClick={handleClick}
-              >
-                {zoom}
-              </p>
             <iframe src="indexResume.html" />
+            <p className="zoomId" onClick={handleClick}>
+              {zoom}
+            </p>
           </Html>
         </primitive>
       </Float>

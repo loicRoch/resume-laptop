@@ -5,6 +5,10 @@
 }
 body {
   background-color: white;
+  cursor: default;
+}
+main {
+  display: flex;
 }
 section {
   margin: 2rem 0 0 1rem;
@@ -15,6 +19,16 @@ section {
     list-style: none;
     margin-inline: 1rem;
   }
+  & a {
+    cursor: pointer;
+  }
+  & a:link {
+    text-decoration: none;
+    color: black;
+  }
+  & a:hover {
+    text-decoration: underline;
+  }
 }
 #profile {
   margin-top: 0.4rem;
@@ -23,7 +37,6 @@ li {
   list-style: circle;
 }
 .knowledge {
-  background-color: rgba(128, 128, 128, 0.434);
   color: black;
   width: 50%;
   padding-block: 0.4rem;
@@ -54,12 +67,28 @@ li {
     background-color: rgba(0, 0, 0, 0.31);
   }
 }
+#programming {
+  background-color: lightgrey;
+  box-shadow: 0 200px 100px -100px white inset;
+  transition: box-shadow 1s;
+}
+#programming:hover {
+  background-color: lightskyblue;
+  box-shadow: 0 -200px 100px -100px rgb(211, 240, 240) inset;
+}
 #methods {
-  background-color: rgba(54, 54, 54, 0.748);
+  background-color: darkgray;
+  box-shadow: 0 200px 100px -100px rgb(255, 255, 255) inset;
+  transition: box-shadow 1s;
   & div > span {
     background-color: rgba(54, 54, 54, 0.238);
   }
 }
+#methods:hover {
+  background-color: rgb(87, 118, 190);
+  box-shadow: 0 -200px 100px -100px rgb(211, 240, 240) inset;
+}
+
 #methods > ul > div > span:first-child {
   font-weight: bold;
   background-color: rgba(54, 54, 54, 0.421);
@@ -81,10 +110,4 @@ tr:nth-child(even) {
   & tr > td {
     padding-inline: 0.4rem;
   }
-}
-#identity:hover,
-.knowledge:hover,
-#education:hover,
-#experienceInterests:hover {
-  cursor: pointer;
 }
