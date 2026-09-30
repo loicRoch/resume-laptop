@@ -13,8 +13,22 @@ main {
 section {
   margin: 2rem 0 0 1rem;
 }
+address {
+  display: flex;
+}
+a {
+  cursor: pointer;
+}
+a:link {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: underline;
+}
 #contact {
   display: flex;
+  flex-direction: column;
   & li {
     list-style: none;
     margin-inline: 1rem;
@@ -30,11 +44,24 @@ section {
     text-decoration: underline;
   }
 }
+#portfolio {
+  display: flex;
+}
 #profile {
   margin-top: 0.4rem;
 }
 li {
   list-style: circle;
+}
+#portfolio {
+  margin-left: 10%;
+  width: 100%;
+  img {
+    max-width: 100px;
+  }
+}
+#knowledgeContainer {
+  display: flex;
 }
 .knowledge {
   color: black;
