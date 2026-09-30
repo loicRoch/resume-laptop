@@ -20,7 +20,6 @@ function App() {
           position: [0, 1, 4],
         }}
       >
-        <axesHelper args={[10]} />
         <gridHelper args={[20, 20]} />
         <color args={["#1a2324"]} attach="background" />
         <Environment preset="studio" />
